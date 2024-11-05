@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.chat-container {
+    border: 1px solid #ccc;
+    padding: 10px;
+    height: 400px;
+    overflow-y: scroll;
+    background-color: white;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.chat-container div {
+    margin-bottom: 10px; /* Jarak antara chat */
+}
+
+strong {
+    font-weight: bold; /* Membuat teks tebal */
+}
+
+.input-form {
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+button {
+    padding: 15px;
+    border-radius: 20px;
+    background-color: rgb(255, 119, 0);
+}
