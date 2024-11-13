@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+}
+
+.chat-container {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.nav { 
+    text-align: center;
+    background-color: #007bff;
+    padding-top: 10px;
+}
+
+.nav h1 { 
+    padding-bottom: 10px;
+
+}
+
+.chat-messages {
+    height: 500px;
+    overflow-y: auto;
+    padding: 5px;
+}
+
+.message {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.user-message {
+    background-color: #007bff;
+    color: white;
+    align-self: flex-end;
+    max-width: 80%;
+    margin-left: auto;
+}
+
+.ai-message {
+    background-color: #e9ecef;
+    color: black;
+    align-self: flex-start;
+    max-width: 80%;
+}
+
+.input-area {
+    display: flex;
+    padding: 15px;
+    background-color: #f8f9fa;
+}
+
+textarea {
+    flex-grow: 1;
+    margin-right: 10px;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    resize: none;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.welcome-message {
+    text-align: center;
+    color: #6c757d;
+    margin-bottom: 20px;
+}
+
+.loading {
+    text-align: center;
+    color: #6c757d;
+}
+
+/* Animasi mengetik */
+.typing::after {
+    content: '|';
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+/* Gaya untuk elemen HTML yang dihasilkan */
+.message h1, .message h2, .message h3, 
+.message h4, .message h5, .message h6 {
+    margin: 10px 0;
+    color: #333;
+}
+
+.message ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.message li {
+    margin-bottom: 5px;
+}
+
+.message code {
+    background-color: #f4f4f4;
+    border-radius: 3px;
+    padding: 2px 4px;
+    font-family: monospace;
+}
+
+.message strong {
+    font-weight: bold;
+}
+
+.message em {
+    font-style: italic;
+}
